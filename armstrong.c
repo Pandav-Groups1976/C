@@ -1,17 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    int n=273;
+    int n=371;
     int rem;
     int cubesum=0;
+    int copy=n;
+printf("Cube sum=%d, n=%d,copy=%d\n",cubesum,n,copy);
     while(n!=0)
     {
     rem =n % 10;
     cubesum=cubesum+ rem*rem *rem;
     n=n/10;
-
+printf("Cube sum=%d, n=%d,copy=%d\n",cubesum,n,copy);
     }
-    printf("Cube sum=%d\n",cubesum);
+    //n=0 and cubesum will have digits cube
+if(copy==cubesum)
+    printf("%d is armstrong\n",copy);
+    else
+        printf("%d is not armstrong\n",copy);
     return 0;
 
     /*
