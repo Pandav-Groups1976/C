@@ -3,13 +3,15 @@ int main()
 {
     int n=273;
     int rem;
+    int cubesum=0;
     while(n!=0)
     {
     rem =n % 10;
-    printf("Rem=%d\n",rem);
+    cubesum=cubesum+ rem*rem *rem;
     n=n/10;
-    printf("N=%d\n",n);
+
     }
+    printf("Cube sum=%d\n",cubesum);
     return 0;
 
     /*
