@@ -1,26 +1,27 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,i,limit;
     int rem;
-    int cubesum=0;
+    int cubesum;
     int copy;
     printf("Enter the number");
-    scanf("%d",&n);
-    copy=n;
-printf("Cube sum=%d, n=%d,copy=%d\n",cubesum,n,copy);
-    while(n!=0)
+    scanf("%d",&limit);
+    for(i=0;i<=limit;i++)
     {
-    rem =n % 10;
+
+    n=i;
+cubesum=0;
+      while(n!=0)
+      {
+           rem =n % 10;
     cubesum=cubesum+ rem*rem *rem;
     n=n/10;
-printf("Cube sum=%d, n=%d,copy=%d\n",cubesum,n,copy);
+      }
+      if(cubesum==i)
+
+      printf("%d,",i);
     }
-    //n=0 and cubesum will have digits cube
-if(copy==cubesum)
-    printf("%d is armstrong\n",copy);
-    else
-        printf("%d is not armstrong\n",copy);
     return 0;
 
     /*
