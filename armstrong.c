@@ -1,10 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int n=371;
+    int n;
     int rem;
     int cubesum=0;
-    int copy=n;
+    int copy;
+    printf("Enter the number");
+    scanf("%d",&n);
+    copy=n;
 printf("Cube sum=%d, n=%d,copy=%d\n",cubesum,n,copy);
     while(n!=0)
     {
