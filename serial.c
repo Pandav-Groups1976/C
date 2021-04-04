@@ -1,19 +1,10 @@
 #include<stdio.h>
 int main()
 {
-  int a=10;
-  for(;;)
-  {
-    if(a<1)
-    break;
-    printf("%d,",a);
-   a--;
-  }
-
-
-
-
-
+    int a;
+    for(a=1;a<=10;a++)
+    {
+     printf("%d,",11-a);
+    }
     return 0;
-
 }
