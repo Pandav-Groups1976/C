@@ -2,13 +2,14 @@
 int main()
 {
   int a=1;
-  for(;;a++)
+  for(;;)
   {
-
+  if(a>10)
+        break;
 
     printf("%d,",a);
-    if(a>=10)
-        break;
+a++;
+
 
   }
     return 0;
