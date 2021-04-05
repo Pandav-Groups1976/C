@@ -13,5 +13,4 @@ int main()
     printf("%d",pow);
     return 0;
 
-
 }
