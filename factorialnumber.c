@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int num=5,fact=1,i;
-    for(i=1;i<=num;i++)
+    int num=1,fact=1,i;
+    for(i=5;i>=num;i--)
     {
         fact=fact*i;
 
